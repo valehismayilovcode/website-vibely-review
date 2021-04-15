@@ -1,0 +1,302 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    background-color: white;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+#head1,
+#head2,
+#head3 {
+    font-size: 60px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2e2e2e;
+    text-align: center;
+}
+
+
+/* NAVIGATOR */
+
+nav #menu a {
+    color: black;
+    text-decoration: none;
+    color: #05386B;
+    font-weight: 600;
+}
+
+nav #menu a:hover {
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+nav #menu {
+    float: right;
+    font-size: 30px;
+    padding-top: 50px;
+}
+
+nav img {
+    border-radius: 50%;
+    width: auto;
+    height: 150px;
+    border: 2px solid whitesmoke;
+}
+
+nav #mobilelogo {
+    display: none;
+}
+
+nav {
+    padding: 20px;
+}
+
+
+/* MOBILE NAV */
+
+mobilenav #menu a {
+    color: black;
+    text-decoration: none;
+    color: #05386B;
+    font-weight: 600;
+}
+
+mobilenav #menu a:hover {
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+mobilenav #menu {
+    font-size: auto;
+    font-weight: 600;
+}
+
+mobilenav {
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* SERVICES */
+
+services #data {
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 80px;
+    color: black;
+}
+
+services a {
+    color: black;
+}
+
+services a:hover {
+    color: #379683;
+    transition: 0.2s;
+}
+
+
+/* PORTFOLIO */
+
+portfolio {
+    text-align: center;
+}
+
+portfolio item img {
+    width: 50%;
+    border: 1px solid rgb(41, 41, 41);
+    border-radius: 3px;
+}
+
+portfolio item img:hover {
+    transition: 2s;
+    opacity: 0.8;
+    box-shadow: inset;
+}
+
+portfolio item #header {
+    font-weight: 600;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+}
+
+
+/* CONTACT */
+
+contact {
+    font-size: 25px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+contact a {
+    color: black;
+}
+
+contact a:hover {
+    color: #379683;
+    transform: 0.2s;
+}
+
+
+/* ABOUT */
+
+about {
+    text-align: center;
+}
+
+about img {
+    border-radius: 50%;
+    width: auto;
+    height: 250px;
+    border: 2px solid whitesmoke;
+}
+
+
+/* FOOT */
+
+#foot {
+    font-size: 20px;
+    text-align: center;
+    color: gray;
+}
+
+
+/* MOBILE */
+
+@media (max-width:880px) {
+    body {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    nav #menu {
+        display: none;
+    }
+    nav #mobilelogo {
+        text-align: center;
+        display: block;
+    }
+    nav #logo {
+        display: none;
+    }
+    services #data {
+        font-size: 35px;
+    }
+    #empty {
+        display: none;
+    }
+    portfolio item #header {
+        font-size: 22px;
+    }
+    portfolio item img {
+        width: 70%;
+    }
+    #head1,
+    #head2,
+    #head3 {
+        font-size: large;
+    }
+    #foot {
+        font-size: 15px;
+    }
+    about img {
+        border-radius: 50%;
+        width: auto;
+        height: 150px;
+        border: 2px solid whitesmoke;
+    }
+}
+
+@media (min-width:880px) {
+    mobilenav {
+        display: none;
+    }
+    portfolio item #header {
+        font-size: 22px;
+    }
+}
+
+
+/* PACKETS */
+
+
+/* NORMAL */
+
+mobilepacks {
+    display: none;
+}
+
+#packs div {
+    background-color: #00C696;
+    margin-left: 450px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+#packs div #head-pack,
+mobilepacks div #head-pack {
+    text-align: center;
+    color: whitesmoke;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+#packs div #about-pack,
+mobilepacks div #about-pack {
+    padding-left: 30px;
+    padding-right: 30px;
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+#packs div #price-pack,
+mobilepacks div #price-pack {
+    color: whitesmoke;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+#packs div #order-pack,
+mobilepacks div #order-pack {
+    text-align: center;
+}
+
+#packs div #order-pack a,
+mobilepacks div #order-pack a {
+    background-color: #EDF5E1;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #00C696;
+    text-decoration: none;
+    font-weight: 600;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+}
+
+#packs div #order-pack a:hover {
+    transition: 0.2s;
+    opacity: 0.8;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 880px) {
+    .pack2 {
+        display: none;
+    }
+    mobilepacks {
+        display: block;
+    }
+    /*pack edit*/
+}
